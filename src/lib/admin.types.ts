@@ -262,6 +262,7 @@ export interface AdminConfig {
       transcodeMp4?: boolean; // 转码mp4
       proxyPlay?: boolean; // 视频播放代理开关
       customUserAgent?: string; // 自定义User-Agent
+      embyAuthorizationHeader?: string; // 自定义 X-Emby-Authorization 请求头
     }>;
     // 旧格式：单源配置（向后兼容）
     Enabled?: boolean;
@@ -272,6 +273,7 @@ export interface AdminConfig {
     UserId?: string;
     AuthToken?: string;
     Libraries?: string[];
+    embyAuthorizationHeader?: string;
     LastSyncTime?: number;
     ItemCount?: number;
   };

@@ -707,6 +707,7 @@ export function configSelfCheck(adminConfig: AdminConfig): AdminConfig {
             UserId: oldConfig.UserId,
             AuthToken: oldConfig.AuthToken,
             Libraries: oldConfig.Libraries,
+            embyAuthorizationHeader: oldConfig.embyAuthorizationHeader,
             LastSyncTime: oldConfig.LastSyncTime,
             ItemCount: oldConfig.ItemCount,
             isDefault: true,
